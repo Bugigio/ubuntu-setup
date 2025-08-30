@@ -47,7 +47,9 @@ alias venv='source ~/.py-venv/bin/activate'
 alias cat='bat'
 
 # exports
-export PWNLIB_GDB=/usr/local/bin/pwndbg
+# export PWNLIB_GDB=/usr/local/bin/pwndbg
+export JAVA_HOME=~/.local/java/jdk-21.0.8+9
+export PATH=$JAVA_HOME/bin:$PATH
 
 neofetch
 
