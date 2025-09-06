@@ -45,6 +45,8 @@ alias ghidra='/home/bugigio/ghidra_11.4_PUBLIC/ghidraRun'
 alias gdb='pwndbg'
 alias venv='source ~/.py-venv/bin/activate'
 alias cat='bat'
+alias sudo='sudo '
+alias apt='nala'
 
 # exports
 # export PWNLIB_GDB=/usr/local/bin/pwndbg
