@@ -1,0 +1,54 @@
+1. Install nala: sudo apt install nala
+2. Install curl: sudo nala install curl
+3. Install python3, python3-pip, and python3.12-venv
+4. Install zsh: sudo nala install zsh
+4.1 chsh -s $(which zsh)
+4.2 log out and log in, verify with echo $SHELL
+5. Install brave: curl -fsS https://dl.brave.com/install.sh | sh
+6. Install discord: deb file
+7. Install visual studio code: deb file
+8. Install kitty: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+	- sudo ln -sf ~/.local/bin/kitty.app/bin/kitty /usr/local/bin
+	- sudo ln -sf ~/.local/bin/kitty.app/bin/kitten /usr/local/bin
+	- sudo nano /usr/share/applications/kitty.desktop
+	- paste this: 
+		[Desktop Entry]
+		Version=1.0
+		Type=Application
+		Name=Kitty Terminal
+		GenericName=Terminal Emulator
+		Comment=Fast, feature-rich, GPU based terminal emulator
+		Exec=kitty
+		Icon=kitty
+		Categories=System;TerminalEmulator;
+		Keywords=terminal;emulator;shell;command;command-line;
+		StartupNotify=true
+		StartupWMClass=kitty
+	- mkdir -p ~/.local/share/icons
+	- cp .local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png .local/share/icons/
+	- update-desktop-database ~/.local/share/applications/
+	- download kitty.conf and current-theme.conf from github
+9. Install starship: curl -sS https://starship.rs/install.sh | sh
+10. Install JDK: tar.gz file
+10.1 Export the jdk-{version} folder into ~/.local/java
+11. Install spotify: snap install spotify
+12. Install neofetch: sudo nala install neofetch
+13. Install batcat: sudo nala install bat
+14. Install eza: sudo nala install eza
+15. Install ghidra: zip file
+15.1 Extract the content in the home folder named as "ghidra_11.4.2". The ghidraRun file should be inside that folder on the first level, ex. "ghidra_11.4.2/ghidraRun"
+16. Create a virtual envoirment with "python -m venv .py-venv"
+16.1 Install the packages in the github file requirements.txt
+17. Install gdbserver: sudo nala install gdbserver
+18. Install pwndbg: cd; git clone https://github.com/pwndbg/pwndbg; cd pwndbg; ./setup.sh
+19. Install gnome-tweaks and gnome-extension-manager with nala
+20. Install cmake: sudo nala install cmake
+21. Install ninja: sudo nala install ninja-build
+22. Install patchelf: github page
+23. Install rust: curl https://sh.rustup.rs -sSf | sh
+24. Source env: . "$HOME/.cargo/env"
+25. Install cargo: rustup toolchain install beta
+26. Install pwinit dependencies: sudo nala update
+sudo nala install liblzma-dev pkg-config build-essential libssl-dev elfutils
+27. Install pwinit: cargo install pwinit
+28. Install the following fonts:
