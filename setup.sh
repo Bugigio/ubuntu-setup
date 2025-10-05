@@ -31,7 +31,7 @@ echo "Installing kitty terminal..."
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 sudo ln -s ~/.local/kitty.app/bin/kitty /usr/local/bin/
 sudo ln -s ~/.local/kitty.app/bin/kitten /usr/local/bin/
-sudo echo "[Desktop Entry]
+echo "[Desktop Entry]
 		Version=1.0
 		Type=Application
 		Name=Kitty Terminal
@@ -42,7 +42,7 @@ sudo echo "[Desktop Entry]
 		Categories=System;TerminalEmulator;
 		Keywords=terminal;emulator;shell;command;command-line;
 		StartupNotify=true
-		StartupWMClass=kitty" >> /usr/share/applications/kitty.desktop
+		StartupWMClass=kitty" | sudo tee /usr/share/applications/kitty.desktop
 mkdir -p ~/.local/share/icons
 cp ~/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png ~/.local/share/icons/
 update-desktop-database ~/.local/share/applications/
