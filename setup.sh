@@ -57,7 +57,7 @@ mkdir -p ~/.local/java
 # This will get the latest JDK 25 build
 wget -O jdk-25-latest.tar.gz 'https://api.adoptium.net/v3/binary/latest/25/ga/linux/x64/jdk/hotspot/normal/eclipse'
 tar -xzf jdk-25-latest.tar.gz -C ./
-mv ./jdk-25* ~/.local/java/jdk-latest
+mv ./jdk-25* ~/.local/java/
 rm -rf jdk-25-latest.tar.gz
 
 # echo "Installing ghidra..."
