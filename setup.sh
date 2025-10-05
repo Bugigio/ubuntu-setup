@@ -10,7 +10,7 @@ sudo apt install -y nala
 
 echo "Installing other packages..."
 
-sudo nala install -y git zsh curl wget neofetch eza bat starship cmake build-essential python3 python3-pip python3-venv ninja-build gdb gdbserver gnome-extensions gnome-tweaks
+sudo nala install -y git zsh curl wget neofetch eza bat cmake build-essential python3 python3-pip python3-venv ninja-build gdb gdbserver gnome-tweaks
 
 echo "Changing default shell to zsh..."
 chsh -s $(which zsh)
