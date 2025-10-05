@@ -41,7 +41,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 #Aliases 
 alias ls='eza --icons'
-alias ghidra='/home/bugigio/ghidra_11.4_PUBLIC/ghidraRun'
+alias ghidra='/home/bugigio/ghidra/ghidraRun'
 alias gdb='pwndbg'
 alias venv='source ~/.py-venv/bin/activate'
 alias cat='bat'
@@ -50,7 +50,7 @@ alias apt='nala'
 
 # exports
 # export PWNLIB_GDB=/usr/local/bin/pwndbg
-export JAVA_HOME=~/.local/java/jdk-21.0.8+9
+export JAVA_HOME=~/.local/java/jdk-latest
 export PATH=$JAVA_HOME/bin:$PATH
 
 neofetch

@@ -5,7 +5,7 @@
 4.1 chsh -s $(which zsh)
 4.2 log out and log in, verify with echo $SHELL
 5. Install brave: curl -fsS https://dl.brave.com/install.sh | sh
-6. Install discord: deb file
+6. Install discord: snap install discord
 7. Install visual studio code: deb file
 8. Install kitty: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 	- sudo ln -sf ~/.local/bin/kitty.app/bin/kitty /usr/local/bin
