@@ -29,6 +29,7 @@ rm -rf vscode.deb
 
 echo "Installing kitty terminal..."
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+sudo rm -rf /usr/local/bin/kitty /usr/local/bin/kitten 
 sudo ln -s ~/.local/kitty.app/bin/kitty /usr/local/bin/
 sudo ln -s ~/.local/kitty.app/bin/kitten /usr/local/bin/
 echo "[Desktop Entry]
@@ -73,7 +74,7 @@ pip install -r requirements.txt
 deactivate
 
 echo "Installing pwndbg..."
-git clone https://github.com/pwndbg/pwndbg && ./pwndbg/setup.sh
+git clone https://github.com/pwndbg/pwndbg ~/ && ~/pwndbg/setup.sh
 
 # echo "Installing patchelf..."
 # git clone 
@@ -100,7 +101,7 @@ echo "Make sure also to install ghidra and patchelf manually if you want to use 
 echo "https://github.com/NixOS/patchelf"
 echo "https://github.com/NationalSecurityAgency/ghidra/releases/"
 
-echo "Install manually these fonts zips: FiraMono.zip, JetBrains_Mono.zip, Meslo.zip and then run fonts.sh"
+echo "Install manually these fonts: FiraMono, JetBrains_Mono, Meslo"
 
 
 echo "Setup complete! Please restart your terminal."
