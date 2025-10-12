@@ -92,7 +92,7 @@ source "$HOME/.cargo/env"
 rustup toolchain install beta
 sudo nala update
 sudo nala install liblzma-dev pkg-config build-essential libssl-dev elfutils
-cargo install pwinit
+cargo install pwninit
 
 echo "Setting up printer drivers..."
 sudo nala install -y epson-inkjet.deb epson-printer.deb
