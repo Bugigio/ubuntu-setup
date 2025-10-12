@@ -2,6 +2,11 @@
 
 set -e
 
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 <path-to-fonts.zip>"
+	exit 1
+fi
+
 if ! [ -f $1 ]; then
 	echo "Usage: $0 <path-to-fonts.zip>"
 	exit 1
