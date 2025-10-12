@@ -14,6 +14,7 @@ sudo nala install -y git zsh curl wget neofetch eza bat cmake build-essential py
 
 echo "Changing default shell to zsh..."
 chsh -s $(which zsh)
+cp ./.zshrc ~/.zshrc
 
 echo "Installing brave browser..."
 curl -fsS https://dl.brave.com/install.sh | sh
@@ -52,6 +53,7 @@ cp ./kitty.conf ~/.config/kitty/kitty.conf
 
 echo "Installing starship prompt..."
 curl -sS https://starship.rs/install.sh | sh
+cp ./starship_config.toml ~/.config/starship.toml
 
 echo "Installing jdk latest..."
 mkdir -p ~/.local/java
