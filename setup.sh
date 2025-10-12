@@ -106,4 +106,4 @@ echo "https://github.com/NationalSecurityAgency/ghidra/releases/"
 echo "Install manually these fonts: FiraMono, JetBrains_Mono, Meslo"
 
 
-echo "Setup complete! Please restart your terminal."
+echo "Setup complete! Please restart your machine."
