@@ -10,7 +10,7 @@ sudo apt install -y nala
 
 echo "Installing other packages..."
 
-sudo nala install -y git zsh curl wget neofetch eza bat cmake build-essential python3 python3-pip python3-venv ninja-build gdb gdbserver gnome-tweaks
+sudo nala install -y git zsh curl wget neofetch eza bat cmake build-essential python3 python3-pip python3-venv ninja-build gdb gdbserver gnome-tweaks patchelf
 
 echo "Changing default shell to zsh..."
 chsh -s $(which zsh)
@@ -60,13 +60,20 @@ mkdir -p ~/.local/java
 # This will get the latest JDK 25 build
 wget -O jdk-25-latest.tar.gz 'https://api.adoptium.net/v3/binary/latest/25/ga/linux/x64/jdk/hotspot/normal/eclipse'
 tar -xzf jdk-25-latest.tar.gz -C ./
-mv ./jdk-25* ~/.local/java/
 rm -rf jdk-25-latest.tar.gz
+mv ./jdk-25* ~/.local/java/jdk-latest
+
 
 # echo "Installing ghidra..."
 # wget -O ghidra.zip "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.4.2_build/ghidra_11.4.2_PUBLIC_20250826.zip"
 # unzip ghidra.zip -d ~/
 # rm -rf ghidra.zip
+
+echo "Installing burp suite community edition..."
+wget -O burpsuite_installer.sh 'https://portswigger.net/burp/releases/startdownload?product=community&version=2025.8.7&type=Linux'
+chmod +x burpsuite_installer.sh
+./burpsuite_installer.sh
+rm -rf burpsuite_installer.sh
 
 echo "Setting up python venv..."
 python3 -m venv ~/.py-venv
@@ -77,14 +84,6 @@ deactivate
 
 echo "Installing pwndbg..."
 git clone https://github.com/pwndbg/pwndbg ~/ && ~/pwndbg/setup.sh
-
-# echo "Installing patchelf..."
-# git clone 
-# mkdir build
-# cd build
-# cmake .. -GNinja
-# ninja all
-# sudo ninja install
 
 echo "Installing rust..."
 curl https://sh.rustup.rs -sSf | sh

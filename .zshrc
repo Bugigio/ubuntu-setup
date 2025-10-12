@@ -41,7 +41,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 #Aliases 
 alias ls='eza --icons'
-alias ghidra='/home/bugigio/ghidra/ghidraRun'
+alias ghidra='~/ghidra/ghidraRun'
 #alias gdb='pwndbg'
 alias venv='source ~/.py-venv/bin/activate'
 alias cat='bat'
