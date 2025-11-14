@@ -19,7 +19,7 @@ cp ./.zshrc ~/.zshrc
 echo "Installing brave browser..."
 curl -fsS https://dl.brave.com/install.sh | sh
 
-echo "Installing spotify and discord..."
+	echo "Installing spotify and discord..."
 sudo snap install spotify
 sudo snap install discord
 
@@ -47,7 +47,7 @@ echo "[Desktop Entry]
 		StartupWMClass=kitty" | sudo tee /usr/share/applications/kitty.desktop
 mkdir -p ~/.local/share/icons
 cp ~/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png ~/.local/share/icons/
-# update-desktop-database ~/.local/share/applications/
+update-desktop-database ~/.local/share/applications/
 cp ./current-theme.conf ~/.config/kitty/current-theme.conf
 cp ./kitty.conf ~/.config/kitty/kitty.conf
 
