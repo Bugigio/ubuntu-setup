@@ -44,7 +44,7 @@ alias ls='eza --icons'
 alias ghidra='~/ghidra/ghidraRun'
 #alias gdb='pwndbg'
 alias venv='source ~/.py-venv/bin/activate'
-alias cat='bat'
+alias cat='batcat'
 alias sudo='sudo '
 alias apt='nala'
 
