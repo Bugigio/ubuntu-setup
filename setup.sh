@@ -83,7 +83,7 @@ pip install -r requirements.txt
 deactivate
 
 echo "Installing pwndbg..."
-git clone https://github.com/pwndbg/pwndbg ~/ && ~/pwndbg/setup.sh
+git clone https://github.com/pwndbg/pwndbg ~/pwndbg && cd ~/pwndbg && ./setup.sh
 
 echo "Installing rust..."
 curl https://sh.rustup.rs -sSf | sh
